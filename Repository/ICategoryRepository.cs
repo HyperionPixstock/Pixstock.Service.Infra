@@ -86,5 +86,12 @@ namespace Pixstock.Service.Infra.Repository
         /// </summary>
         /// <returns></returns>
         ICategory LoadRootCategory();
+
+        /// <summary>
+        /// JSON文字列を使って既存エンティティのプロパティを更新する
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="json"></param>
+        void UpdatePopulateFromJson (long id, string json);
     }
 }
